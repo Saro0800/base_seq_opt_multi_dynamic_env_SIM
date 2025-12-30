@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+   <world name="default">
+      <!-- A ground plane -->
+      <include>
+         <uri>model://ground_plane</uri>
+      </include>
+      <!-- A global light source -->
+      <include>
+         <uri>model://sun</uri>
+      </include>   
+      <!-- An actor -->
+      <actor name="animated_box">
+        <link name="link">
+          <inertial>
+            <mass>1.0</mass>
+            <inertia> <!-- inertias are tricky to compute -->
+              <!-- http://gazebosim.org/tutorials?tut=inertia&cat=build_robot -->
+              <ixx>0.083</ixx>       <!-- for a box: ixx = 0.083 * mass * (y*y + z*z) -->
+              <ixy>0.0</ixy>         <!-- for a box: ixy = 0 -->
+              <ixz>0.0</ixz>         <!-- for a box: ixz = 0 -->
+              <iyy>0.083</iyy>       <!-- for a box: iyy = 0.083 * mass * (x*x + z*z) -->
+              <iyz>0.0</iyz>         <!-- for a box: iyz = 0 -->
+              <izz>0.083</izz>       <!-- for a box: izz = 0.083 * mass * (x*x + y*y) -->
+            </inertia>
+          </inertial>
+          <collision name="collision">
+            <geometry>
+              <box>
+                <size>1 1 1</size>
+              </box>
+            </geometry>
+          </collision>
+          <visual name="visual">
+            <geometry>
+              <box>
+                <size>1 1 1</size>
+              </box>
+            </geometry>
+          </visual>
+        </link>
+        <script>
+          <loop>true</loop>
+          <delay_start>0.000000</delay_start>
+          <auto_start>true</auto_start>      
+          <trajectory id="0" type="square">
+             <waypoint>
+                <time>0.0</time>
+                <pose>-3 -3 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>1.0</time>
+                <pose>-3 3 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>2.0</time>
+                <pose>3 3 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>3.0</time>
+                <pose>3 -3 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>4.0</time>
+                <pose>-3 -3 0 0 0 0</pose>
+             </waypoint>
+          </trajectory>
+        </script>
+      </actor>
+   </world>
+</sdf>
