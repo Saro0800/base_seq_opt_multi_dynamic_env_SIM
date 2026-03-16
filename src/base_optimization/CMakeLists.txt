@@ -64,7 +64,6 @@ add_message_files(
 add_service_files(
   FILES
   octomap2cloud.srv
-  images_giver.srv
 )
 
 ## Generate actions in the 'action' folder
@@ -153,12 +152,6 @@ include_directories(
 add_executable(octo2cloud_converter_node src/base_optimization/octo2cloud_converter.cpp)
 add_dependencies(octo2cloud_converter_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
-add_executable(filter_octomap_node src/base_optimization/filter_octomap.cpp)
-add_dependencies(filter_octomap_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-
-add_executable(prepare_octomap_sim_node src/base_optimization/prepare_octomap_sim.cpp)
-add_dependencies(prepare_octomap_sim_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
@@ -201,14 +194,7 @@ target_link_libraries(prepare_octomap_sim_node
 ## in contrast to setup.py, you can choose the destination
 catkin_install_python(PROGRAMS
   src/base_optimization/find_opt_pose_multi.py
-  src/base_optimization/des_EE_pose_publisher_multi.py
-  src/base_optimization/des_EE_pose_publisher_sim_multi.py
   src/base_optimization/move_to_next_pose.py
-  src/base_optimization/move_to_next_pose_sim.py
-  src/base_optimization/prova_movimento_braccio.py
-  src/base_optimization/tmp_camera_loc.py
-  src/base_optimization/images_giver.py
-  src/base_optimization/tmp_pick.py
   src/base_optimization/tag_tf_recorder.py
   src/base_optimization/octomap_frustum_viewer.py
   src/base_optimization/dynamic_obstacle_monitor.py
