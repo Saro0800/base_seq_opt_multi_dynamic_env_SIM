@@ -3,8 +3,8 @@
   <arg name="launch_prefix"   default=""/>
 
   <!-- Set parameters -->
-  <rosparam command="load" file="$(find base_optimization)/config/settings.yaml" ns="$(arg node_namespace)" />
-  <rosparam command="load" file="$(find base_optimization)/config/tags.yaml" ns="$(arg node_namespace)" />
+  <rosparam command="load" file="$(find ee_target_utils)/config/settings.yaml" ns="$(arg node_namespace)" />
+  <rosparam command="load" file="$(find ee_target_utils)/config/tags.yaml" ns="$(arg node_namespace)" />
 
   <node
     pkg="apriltag_ros"
