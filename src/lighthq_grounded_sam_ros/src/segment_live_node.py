@@ -18,13 +18,13 @@ from sensor_msgs.msg import Image, CameraInfo
 from message_filters import ApproximateTimeSynchronizer, Subscriber
 from nav_msgs.msg import OccupancyGrid
 
-import prova_pkg_grounded_sam.groundingdino as GroundingDINO
-import prova_pkg_grounded_sam.segment_anything as SAM
-import prova_pkg_grounded_sam.LightHQSAM as LightHQSAM
+import lighthq_grounded_sam_ros.groundingdino as GroundingDINO
+import lighthq_grounded_sam_ros.segment_anything as SAM
+import lighthq_grounded_sam_ros.LightHQSAM as LightHQSAM
 
-from prova_pkg_grounded_sam.groundingdino.util.inference import Model
-from prova_pkg_grounded_sam.segment_anything import SamPredictor
-from prova_pkg_grounded_sam.LightHQSAM.setup_light_hqsam import setup_model
+from lighthq_grounded_sam_ros.groundingdino.util.inference import Model
+from lighthq_grounded_sam_ros.segment_anything import SamPredictor
+from lighthq_grounded_sam_ros.LightHQSAM.setup_light_hqsam import setup_model
 
 
 class SegmentationNode:

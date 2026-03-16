@@ -156,7 +156,6 @@ include_directories(
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
 catkin_install_python(PROGRAMS
-  src/grounded_light_hqsam.py
   src/segment_live_node.py
   src/segment_mqtt_bridge_node.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}

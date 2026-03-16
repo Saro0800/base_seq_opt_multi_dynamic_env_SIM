@@ -2,10 +2,10 @@ from distutils.core import setup
 from catkin_pkg.python_setup import generate_distutils_setup
 
 d = generate_distutils_setup(
-    packages=['prova_pkg_grounded_sam',
-              'prova_pkg_grounded_sam.LightHQSAM',
-              'prova_pkg_grounded_sam.segment_anything',
-              'prova_pkg_grounded_sam.groundingdino'],
+    packages=['lighthq_grounded_sam_ros',
+              'lighthq_grounded_sam_ros.LightHQSAM',
+              'lighthq_grounded_sam_ros.segment_anything',
+              'lighthq_grounded_sam_ros.groundingdino'],
     package_dir={'': 'src'}
 )
 
