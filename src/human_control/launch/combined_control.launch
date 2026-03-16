@@ -1,0 +1,59 @@
+<!-- 
+  Launch file combinato per controllare Robot e Umano.
+  
+  CONTROLLI:
+    Robot:  Frecce direzionali (su, giù, sinistra, destra)
+    Umano:  WASD in modalità assoluta (W=+Y, S=-Y, A=-X, D=+X)
+  
+  PREREQUISITI:
+    - Gazebo deve essere già in esecuzione con il world che contiene
+      il model "robot_obstacle" e l'actor "human"/"human_visual"
+    - pip3 install pynput
+  
+  USO:
+    roslaunch human_control combined_control.launch
+    
+  OPZIONI:
+    fpv:=true      Avvia anche il viewer camera prima persona
+    map:=true      Avvia anche il visualizzatore mappa 2D
+    rviz:=true     Avvia pubblicazione marker per RViz
+-->
+<launch>
+  <!-- Argomenti -->
+  <arg name="fpv" default="false" doc="Avvia FPV viewer"/>
+  <arg name="map" default="false" doc="Avvia Map viewer"/>
+  <arg name="rviz" default="false" doc="Avvia RViz markers"/>
+
+  <!-- Controller Robot (Frecce direzionali) -->
+  <node pkg="human_control" type="robot_controller.py" name="robot_controller"
+        output="screen"/>
+
+  <!-- Controller Umano WASD (modalità assoluta: W=+Y, S=-Y, A=-X, D=+X) -->
+  <node pkg="human_control" type="wasd_controller.py" name="wasd_controller"
+        output="screen">
+    <param name="start_mode" value="absolute"/>
+  </node>
+
+  <!-- FPV Viewer (opzionale) -->
+  <node if="$(arg fpv)"
+        pkg="human_control" type="fpv_viewer.py" name="fpv_viewer"
+        output="screen"/>
+
+  <!-- Map Viewer (opzionale) -->
+  <node if="$(arg map)"
+        pkg="human_control" type="map_viewer.py" name="map_viewer"
+        output="screen"/>
+
+  <!-- RViz Markers (opzionale) -->
+  <node if="$(arg rviz)"
+        pkg="human_control" type="rviz_markers.py" name="rviz_markers"
+        output="screen">
+    <param name="frame_id" value="octomap_frame"/>
+    <param name="robot_scale" value="0.001"/>
+    <param name="human_scale" value="1.0"/>
+    <!-- Offset locale mesh umano (compensa origine mesh non centrata) -->
+    <param name="human_offset_x" value="0.0"/>
+    <param name="human_offset_y" value="0.0"/>
+    <param name="human_offset_z" value="0.0"/>
+  </node>
+</launch>

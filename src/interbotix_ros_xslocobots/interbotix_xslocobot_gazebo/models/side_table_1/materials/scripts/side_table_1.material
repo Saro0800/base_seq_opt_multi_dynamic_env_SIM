@@ -1,0 +1,19 @@
+material side_table_1
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.6 0.5 0.4 1.0
+      diffuse 0.7 0.6 0.5 1.0
+      specular 0.1 0.1 0.1 1.0 10
+      
+      texture_unit
+      {
+        texture brown_light.jpg
+	scale 1 1
+      }
+    }
+  }
+}
+

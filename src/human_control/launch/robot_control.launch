@@ -1,0 +1,28 @@
+<!-- 
+  Launch file per il controller robot obstacle.
+  Avvia il controller tastiera per muovere il cilindro nero nel mondo Gazebo.
+  
+  PREREQUISITI:
+    - Gazebo deve essere gia' in esecuzione con il world che contiene
+      il model "robot_obstacle"
+    - pip3 install pynput
+  
+  USO:
+    roslaunch human_control robot_control.launch
+    
+  OPZIONI:
+    map:=true     Avvia anche il visualizzatore mappa 2D
+-->
+<launch>
+  <!-- Argomenti -->
+  <arg name="map" default="false" doc="Avvia Map viewer"/>
+
+  <!-- Controller Robot (richiede terminale con focus per input tastiera) -->
+  <node pkg="human_control" type="robot_controller.py" name="robot_controller"
+        output="screen"/>
+
+  <!-- Map Viewer (opzionale) -->
+  <node if="$(arg map)"
+        pkg="human_control" type="map_viewer.py" name="map_viewer"
+        output="screen"/>
+</launch>

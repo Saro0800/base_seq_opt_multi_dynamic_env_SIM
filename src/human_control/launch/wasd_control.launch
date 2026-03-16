@@ -1,0 +1,35 @@
+<!-- 
+  Launch file per il controller umano WASD.
+  Avvia il controller tastiera per muovere l'umano nel mondo Gazebo.
+  
+  PREREQUISITI:
+    - Gazebo deve essere gia' in esecuzione con il world che contiene
+      il model "human" e l'actor "human_visual"
+    - pip3 install pynput
+  
+  USO:
+    roslaunch human_control wasd_control.launch
+    
+  OPZIONI:
+    fpv:=true     Avvia anche il viewer camera prima persona
+    map:=true     Avvia anche il visualizzatore mappa 2D
+-->
+<launch>
+  <!-- Argomenti -->
+  <arg name="fpv" default="false" doc="Avvia FPV viewer"/>
+  <arg name="map" default="false" doc="Avvia Map viewer"/>
+
+  <!-- Controller WASD (richiede terminale con focus per input tastiera) -->
+  <node pkg="human_control" type="wasd_controller.py" name="wasd_controller"
+        output="screen"/>
+
+  <!-- FPV Viewer (opzionale) -->
+  <node if="$(arg fpv)"
+        pkg="human_control" type="fpv_viewer.py" name="fpv_viewer"
+        output="screen"/>
+
+  <!-- Map Viewer (opzionale) -->
+  <node if="$(arg map)"
+        pkg="human_control" type="map_viewer.py" name="map_viewer"
+        output="screen"/>
+</launch>

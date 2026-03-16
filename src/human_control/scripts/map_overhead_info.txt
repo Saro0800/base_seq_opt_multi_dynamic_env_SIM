@@ -1,0 +1,4 @@
+center_y=-0.10000000000000009
+center_x=2.8
+size_meters=15.639999999999999
+resolution=800

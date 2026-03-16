@@ -1,0 +1,139 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="default">
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <!-- A ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+        <include>
+      <pose>0 2 0 0 0 0</pose>
+      <uri>model://office_env_w</uri>
+    </include>
+    <include>     
+      <pose>0.392889 1.759657 0 0 0 -0.011248</pose>
+      <uri>model://6_Cube_StorageE</uri>
+    </include>
+    <include>     
+      <pose>0.551735 1.685606 0.430943 0 0 1.539267</pose>
+      <uri>model://marker0</uri>
+    </include>
+    <include>     
+      <pose>-0.3 1.5 0.3500 0 0 1.54</pose>
+      <uri>model://marker14</uri>
+    </include>
+    <include>     
+      <pose>3.289537 0 0.430943 0 0 0 </pose>
+      <uri>model://marker1</uri>
+    </include>
+
+    <include>     
+      <pose>-2.459862 1.420232 0.434574 0 0 2.420288</pose>
+      <uri>model://marker2</uri>
+    </include>
+    <include>     
+      <pose>3.328587 -0.132918 0 0 0 -1.569936</pose>
+      <name>6_Cube_StorageE_0</name>
+      <uri>model://6_Cube_StorageE</uri>
+    </include>
+    <include>     
+      <pose>-2.640213 1.391053 0 0 0 -2.302382</pose>
+      <name>6_Cube_StorageE_1</name>
+      <uri>model://6_Cube_StorageE</uri>
+    </include>
+    <include>     
+      <pose>3.885770 -0.121705 0.430941 3.141593 -1.569863 3.141593</pose>
+      <name>Box_33x15_0</name>
+      <uri>model://Box_33x15</uri>
+    </include>
+    <include>     
+      <pose>-2.775149 1.493163 0.430941 2.419025 -1.569863 -3.141313</pose>
+      <name>Box_33x15_1</name>
+      <uri>model://Box_33x15</uri>
+    </include>
+    <!-- Usage: modify the <pose> elements of each actor to change their
+         starting location. Modify the <target> elements of each actor to
+         change their destination. The <target_weight> can be used to
+         tune the vector field used by the ActorPlugin to control the Actor. -->
+    <actor name="actor1">
+      <pose>0 1 0.2 0 0 0</pose>
+      <skin>
+        <filename>walk.dae</filename>
+        <scale>1.0</scale>
+      </skin>
+      <animation name="walking">
+        <filename>walk.dae</filename>
+        <scale>1.000000</scale>
+        <interpolate_x>true</interpolate_x>
+      </animation>
+            <script>
+        <trajectory id="0" type="walking">
+          <waypoint>
+            <time>0</time>
+            <pose>0 2 0 0 0 -1.57</pose>
+          </waypoint>
+          <waypoint>
+            <time>2</time>
+            <pose>0 -2 0 0 0 -1.57</pose>
+          </waypoint>
+          <waypoint>
+            <time>2.5</time>
+            <pose>0 -2 0 0 0 1.57</pose>
+          </waypoint>
+          <waypoint>
+            <time>7</time>
+            <pose>0 2 0 0 0 1.57</pose>
+          </waypoint>
+          <waypoint>
+            <time>7.5</time>
+            <pose>0 2 0 0 0 -1.57</pose>
+          </waypoint>
+        </trajectory>
+      </script>
+
+      <plugin name="actor1_plugin" filename="libActorPlugin.so">
+        <target>0 -5 1.2138</target>
+        <target_weight>1.15</target_weight>
+        <obstacle_weight>1.8</obstacle_weight>
+        <animation_factor>5.1</animation_factor>
+        <!-- Usage: Modify the set of models that the vector field should
+             ignore when moving the actor -->
+        <ignore_obstacles>
+          <model>office_env_w</model>
+          <model>ground_plane</model>
+        </ignore_obstacles>
+      </plugin>
+    </actor>
+
+    <actor name="actor2">
+      <pose>-2 -2 0.2 0 0 0</pose>
+      <skin>
+        <filename>walk.dae</filename>
+        <scale>1.0</scale>
+      </skin>
+      <animation name="walking">
+        <filename>walk.dae</filename>
+        <scale>1.000000</scale>
+        <interpolate_x>true</interpolate_x>
+      </animation>
+      <plugin name="actor2_plugin" filename="libActorPlugin.so">
+        <target>3 2 1.24</target>
+        <target_weight>1.15</target_weight>
+        <obstacle_weight>1.8</obstacle_weight>
+        <animation_factor>5.1</animation_factor>
+        <ignore_obstacles>
+          <model>office_env_w</model>
+          <model>ground_plane</model>
+        </ignore_obstacles>
+      </plugin>
+    </actor>
+    <!-- Trossen Robotics Offices -->
+    <!-- <include>
+      <uri>TrossenRoboticsOfficeBuilding</uri>
+      <pose>0 2 0 0 0 0</pose>
+    </include> -->
+  </world>
+</sdf>
