@@ -126,7 +126,7 @@ class BasePoseOptProblem(ElementwiseProblem):
         # define the constraints
         #       pow(10,-6) is necessary because pymoo uses only the
         #       smaller or equal constraints. Since here we need a 
-        #       (strictly) greater constraints, we convert it to a
+        #       strictly greater constraints, we convert it to a
         #       greater than or equal to constraint of a small quantity
         constraints = [-np.sum(wt_in_outEll) + pow(10,-6),
                        np.sum(wt_in_innEll),
@@ -134,8 +134,7 @@ class BasePoseOptProblem(ElementwiseProblem):
                        -valid_position + pow(10,-6)]
         out["G"] = np.row_stack(constraints)
         
-        # alpha = 0.1         # with clustering
-        alpha = 20         # with greedy
+        alpha = 20
         beta = 1000
         gamma = 5
                 
