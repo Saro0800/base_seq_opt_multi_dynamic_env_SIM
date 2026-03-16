@@ -5,7 +5,7 @@
 <!-- =================================================================================== -->
 <robot name="locobot">
   <material name="interbotix_black">
-    <texture filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/interbotix_black.png"/>
+    <texture filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/interbotix_black.png"/>
   </material>
   <link name="locobot/base_footprint"/>
   <!-- Much of the following Kobuki description is taken from https://github.com/yujinrobot/kobuki/blob/23748ed3dfb082831ca8eaaef1a0b08588dbcb65/kobuki_description/urdf/kobuki.urdf.xacro -->
@@ -55,7 +55,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0.001 0 0.05199"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/kobuki_version/kobuki.dae"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/kobuki_version/kobuki.dae"/>
       </geometry>
     </visual>
     <collision>
@@ -101,7 +101,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/kobuki_version/kobuki_wheel.dae"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/kobuki_version/kobuki_wheel.dae"/>
       </geometry>
     </visual>
     <collision>
@@ -143,7 +143,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/kobuki_version/kobuki_wheel.dae"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/kobuki_version/kobuki_wheel.dae"/>
       </geometry>
     </visual>
     <collision>
@@ -418,14 +418,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/kobuki_version/locobot_base_plate.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/kobuki_version/locobot_base_plate.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/kobuki_version/locobot_base_plate.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/kobuki_version/locobot_base_plate.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -453,14 +453,14 @@
     <visual>
       <origin rpy="1.5707963267948966 0 1.5707963267948966" xyz="-0.095773 0 -0.10565023"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_1_base.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_1_base.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>
     <collision>
       <origin rpy="1.5707963267948966 0 1.5707963267948966" xyz="-0.095773 0 -0.10565023"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_1_base.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_1_base.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -490,14 +490,14 @@
     <visual>
       <origin rpy="0 0 1.5707963267948966" xyz="0 0 -0.003"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_2_shoulder.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_2_shoulder.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>
     <collision>
       <origin rpy="0 0 1.5707963267948966" xyz="0 0 -0.003"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_2_shoulder.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_2_shoulder.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -527,14 +527,14 @@
     <visual>
       <origin rpy="0 0 1.5707963267948966" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_3_upper_arm.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_3_upper_arm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>
     <collision>
       <origin rpy="0 0 1.5707963267948966" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_3_upper_arm.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_3_upper_arm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -564,14 +564,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_4_upper_forearm.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_4_upper_forearm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_4_upper_forearm.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_4_upper_forearm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -601,14 +601,14 @@
     <visual>
       <origin rpy="3.141592653589793 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_5_lower_forearm.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_5_lower_forearm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>
     <collision>
       <origin rpy="3.141592653589793 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_5_lower_forearm.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_5_lower_forearm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -638,14 +638,14 @@
     <visual>
       <origin rpy="0 0 1.5707963267948966" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_6_wrist.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_6_wrist.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>
     <collision>
       <origin rpy="0 0 1.5707963267948966" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_6_wrist.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_6_wrist.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -675,14 +675,14 @@
     <visual>
       <origin rpy="0 0 1.5707963267948966" xyz="-0.02 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_7_gripper.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_7_gripper.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>
     <collision>
       <origin rpy="0 0 1.5707963267948966" xyz="-0.02 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_7_gripper.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_7_gripper.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -724,14 +724,14 @@
     <visual>
       <origin rpy="0 0 1.5707963267948966" xyz="-0.0685 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_8_gripper_prop.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_8_gripper_prop.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>
     <collision>
       <origin rpy="0 0 1.5707963267948966" xyz="-0.0685 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_8_gripper_prop.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_8_gripper_prop.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -750,14 +750,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_11_ar_tag.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_11_ar_tag.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_11_ar_tag.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_11_ar_tag.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -777,14 +777,14 @@
     <visual>
       <origin rpy="0 0 1.5707963267948966" xyz="-0.063 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_9_gripper_bar.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_9_gripper_bar.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>
     <collision>
       <origin rpy="0 0 1.5707963267948966" xyz="-0.063 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_9_gripper_bar.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_9_gripper_bar.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -827,14 +827,14 @@
     <visual>
       <origin rpy="3.141592653589793 3.141592653589793 0" xyz="0 0.005 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_10_gripper_finger.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_10_gripper_finger.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>
     <collision>
       <origin rpy="3.141592653589793 3.141592653589793 0" xyz="0 0.005 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_10_gripper_finger.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_10_gripper_finger.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -865,14 +865,14 @@
     <visual>
       <origin rpy="0 3.141592653589793 0" xyz="0 -0.005 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_10_gripper_finger.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_10_gripper_finger.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>
     <collision>
       <origin rpy="0 3.141592653589793 0" xyz="0 -0.005 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_10_gripper_finger.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/mobile_wx250s_meshes/mobile_wx250s_10_gripper_finger.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -988,7 +988,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/locobot_battery.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/locobot_battery.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -997,7 +997,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/locobot_battery.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/locobot_battery.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -1024,14 +1024,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/kobuki_version/locobot_camera_tower_large.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/kobuki_version/locobot_camera_tower_large.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/kobuki_version/locobot_camera_tower_large_simple.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/kobuki_version/locobot_camera_tower_large_simple.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -1068,14 +1068,14 @@
     <visual>
       <origin rpy="0 0 1.5707963267948966" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/locobot_pan.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/locobot_pan.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>
     <collision>
       <origin rpy="0 0 1.5707963267948966" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/locobot_pan.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/locobot_pan.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -1108,14 +1108,14 @@
     <visual>
       <origin rpy="0 0 1.5707963267948966" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/locobot_tilt.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/locobot_tilt.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>
     <collision>
       <origin rpy="0 0 1.5707963267948966" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/locobot_tilt.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/locobot_tilt.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -1140,7 +1140,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/locobot_camera.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/locobot_camera.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.55 0.55 0.55 1"/>
@@ -1149,7 +1149,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/locobot_camera.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/locobot_camera.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -1227,14 +1227,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/locobot_lidar_tower.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/locobot_lidar_tower.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/locobot_lidar_tower_simple.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/locobot_lidar_tower_simple.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -1261,7 +1261,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/locobot_lidar.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/meshes/locobot_meshes/locobot_lidar.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>

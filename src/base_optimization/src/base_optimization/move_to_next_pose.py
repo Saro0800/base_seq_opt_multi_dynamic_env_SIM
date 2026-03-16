@@ -17,13 +17,12 @@ from moveit_msgs.msg import MoveGroupAction, Grasp
 from interbotix_xs_msgs.msg import JointSingleCommand
 from sensor_msgs.msg import Image, CameraInfo
 from cv_bridge import CvBridge
-from base_optimization.srv import images_giver, images_giverResponse
 import pyrealsense2 as rs
 from tf.transformations import euler_from_quaternion
 import threading
 from std_msgs.msg import Bool
 
-from base_optimization.dynamic_obstacle_monitor import DynamicObstacleMonitor
+from dynamic_obstacle_monitor.monitor import DynamicObstacleMonitor
 
 # How often to poll move_base state and check for obstacles
 OBSTACLE_CHECK_RATE_HZ = 10

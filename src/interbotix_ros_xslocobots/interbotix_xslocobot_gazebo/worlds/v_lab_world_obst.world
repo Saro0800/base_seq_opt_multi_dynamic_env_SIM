@@ -2123,7 +2123,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/human_control/meshes/locobot_intero_sleep_position_reduced.stl</uri>
+              <uri>/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/human_control/meshes/locobot_intero_sleep_position_reduced.stl</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -2144,7 +2144,7 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/human_control/meshes/locobot_intero_sleep_position_reduced.stl</uri>
+              <uri>/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/human_control/meshes/locobot_intero_sleep_position_reduced.stl</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>

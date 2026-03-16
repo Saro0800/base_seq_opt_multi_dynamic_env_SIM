@@ -571,7 +571,7 @@
 #     gen_cloud.create_GUI()
 
 #     # gen_cloud.from_extern = True
-#     # gen_cloud.urdf_file_path = "/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/mobile_wx250s.urdf"
+#     # gen_cloud.urdf_file_path = "/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/mobile_wx250s.urdf"
 #     # gen_cloud.parse_urdf()
 #     # gen_cloud.wrist_lst_j_name = "wrist_rotate"
 #     # gen_cloud.arm_lst_j_name = "elbow"
@@ -1143,7 +1143,7 @@ if __name__ == "__main__":
     gen_cloud.create_GUI()
 
     # gen_cloud.from_extern = True
-    # gen_cloud.urdf_file_path = "/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/mobile_wx250s.urdf"
+    # gen_cloud.urdf_file_path = "/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/reach_space_modeling/src/generate_pointcloud/model/mobile_wx250s.urdf"
     # gen_cloud.parse_urdf()
     # gen_cloud.wrist_lst_j_name = "wrist_rotate"
     # gen_cloud.arm_lst_j_name = "elbow"

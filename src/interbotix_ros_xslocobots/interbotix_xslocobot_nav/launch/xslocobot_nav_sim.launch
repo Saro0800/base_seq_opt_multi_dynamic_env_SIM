@@ -11,7 +11,7 @@
   <arg name="rtabmap_args"                      default=""/>
   <arg name="use_rtabmapviz"                    default="false"/>
   <arg name="rtabmapviz_args"                   default=""/>
-  <arg name="database_path"                     default="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/maps/rtabmap.db"/>
+  <arg name="database_path"                     default="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/maps/rtabmap.db"/>
   <arg name="camera_tilt_angle"                 default="0.2618"/>
   <arg name="use_rviz"                          default="true"/>
   <arg name="base_type"                         default="kobuki"/> <!-- 'kobuki', 'create3' -->
@@ -210,7 +210,7 @@
     name="octomap_server_node"
     output="screen"
     ns="$(arg robot_name)/octomap_server"
-    args="/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/maps/octomap_map.bt">
+    args="/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/maps/octomap_map.bt">
     <remap from="cloud_in"                      to="/$(arg robot_name)/camera/depth_registered/points"/>
     <param name="base_frame_id"                 value="map"/>
     <param name="sensor_model/max_range"        value="2"/>
@@ -254,7 +254,7 @@
     ns="$(arg robot_name)">
   </node> -->
 
-  <arg name="filename"          default="'/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/maps/octomap_map.bt'" />
+  <arg name="filename"          default="'/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/maps/octomap_map.bt'" />
   <arg name="load_map_args"     default='"filename: $(arg filename)"'/>
 
   <!-- start the moveit package -->

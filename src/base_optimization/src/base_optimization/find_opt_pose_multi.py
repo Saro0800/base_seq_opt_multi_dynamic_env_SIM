@@ -486,7 +486,7 @@ def compute_weights_clustering(des_position_multi):
         edge_path.append((best_path[i], best_path[i+1]))
     nx.draw_networkx_edges(g, pos=draw_pos, edgelist=edge_path, edge_color="red", width=2)
 
-    plt.savefig("/home/humans/base_pose_opt_multi_dynamic_env_SIM/figures/graph_path_cluster.png")
+    plt.savefig("/home/humans/base_seq_opt_multi_dynamic_env_SIM/figures/graph_path_cluster.png")
     
     # ------------------- ------------------- -------------------
     
@@ -573,7 +573,7 @@ def compute_weights_greedy(des_position_multi):
     nx.draw_networkx_labels(g, ax=ax2, pos=draw_pos)
     nx.draw_networkx_edges(g, ax=ax2, pos=draw_pos, 
                            edge_color=edge_colors, edgelist=edge_path, width=2)
-    plt.savefig("/home/humans/base_pose_opt_multi_dynamic_env_SIM/figures/graph_path_greedy.png")
+    plt.savefig("/home/humans/base_seq_opt_multi_dynamic_env_SIM/figures/graph_path_greedy.png")
     
     # convert the node sequence given in the path into weights
     # for the optimization problem
@@ -617,7 +617,7 @@ def compute_free_2d_space():
     # cv2.imshow('Original Occupancy Grid', image)
     # cv2.waitKey(1)
     
-    # cv2.imwrite("/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/base_optimization/img/occupancy_grid.png",
+    # cv2.imwrite("/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/base_optimization/img/occupancy_grid.png",
     #             image)
     
 
@@ -642,7 +642,7 @@ def compute_free_2d_space():
     # Find the inflation layer (difference between inflated and original obstacles)
     inflation_layer = cv2.subtract(inflated_mask, obstacle_mask)
 
-    # cv2.imwrite("/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/base_optimization/img/inflated_obstacle.png",
+    # cv2.imwrite("/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/base_optimization/img/inflated_obstacle.png",
     #             inflation_layer)
   
     # Convert grayscale image to BGR for color visualization
@@ -665,7 +665,7 @@ def compute_free_2d_space():
     # cv2.imshow('Inflated Occupancy Grid', image_inflated)
     # cv2.waitKey(1000)
     
-    # cv2.imwrite("/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/base_optimization/img/inflated_grid.png",
+    # cv2.imwrite("/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/base_optimization/img/inflated_grid.png",
     #             image_inflated)
 
     # Keep only the connected white space containing the robot's position
@@ -699,7 +699,7 @@ def compute_free_2d_space():
     # cv2.waitKey(0)
     # cv2.startWindowThread()
 
-    # cv2.imwrite("/home/humans/base_pose_opt_multi_dynamic_env_SIM/src/base_optimization/img/robot_free_space.png",
+    # cv2.imwrite("/home/humans/base_seq_opt_multi_dynamic_env_SIM/src/base_optimization/img/robot_free_space.png",
     #             image_inflated_robot_space)
 
     return msg.info, image_inflated_robot_space

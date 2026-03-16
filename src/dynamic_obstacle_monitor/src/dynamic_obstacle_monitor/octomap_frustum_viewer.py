@@ -12,7 +12,7 @@ import tf2_ros
 from tf.transformations import euler_from_quaternion
 
 # Import reusable components
-from base_optimization.dynamic_obstacle_monitor import (
+from dynamic_obstacle_monitor.monitor import (
     DynamicObstacleMonitor,
     PROJECTED_MAP_TOPIC,
     SEGMENTED_MAP_TOPIC,
