@@ -2,7 +2,6 @@
   <arg name="node_namespace"  default="apriltag_reader_node" />
   <arg name="launch_prefix"   default=""/>
 
-  <!-- Set parameters -->
   <rosparam command="load" file="$(find ee_target_utils)/config/settings.yaml" ns="$(arg node_namespace)" />
   <rosparam command="load" file="$(find ee_target_utils)/config/tags.yaml" ns="$(arg node_namespace)" />
 
@@ -13,7 +12,6 @@
     clear_params="true"
     output="screen"
     launch-prefix="$(arg launch_prefix)" >
-    <!-- Remap topics from those used in code to those on the ROS network -->
     <!-- <remap from="image_rect" to="/locobot/hand_camera/camera/color/image_raw" />
     <remap from="camera_info" to="/locobot/hand_camera/camera/color/camera_info" /> -->
     <remap from="image_rect" to="/locobot/hand_camera/color/image_raw" />
